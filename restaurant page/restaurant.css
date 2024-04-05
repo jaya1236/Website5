@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to top, rgba(0, 39, 39, 0.7), rgba(172, 166, 166, 0.7)), url(https://images.unsplash.com/photo-1613274554329-70f997f5789f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+header {
+    background: transparent;
+    padding: 20px 0;
+    
+}
+
+.logo img {
+    width: 90px;
+    height: 50px;
+}
+
+.nav-links {
+    float: right;
+    margin-top: 20px;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 20px;
+    
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    height: 60vh;
+}
+
+.hero h1 {
+    color: #f9bc14;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #f6db13;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.buttons .btn {
+    display: inline-block;
+    background: transparent;
+    border: 1px solid orange;
+    color: #fff;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.buttons .btn:hover {
+    background-color: #e68a00;
+}
+
+/* Menu Toggle Styles */
+.toggle-btn {
+    width: 30px;
+    height: 30px;
+    background-image: url('menu-icon.png');
+    background-size: cover;
+    cursor: pointer;
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+
+    .toggle-btn {
+        display: block;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+}
